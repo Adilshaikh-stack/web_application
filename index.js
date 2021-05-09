@@ -1,51 +1,7 @@
 
 var openWeather = "b495bcbac3159b21ad63450316b7b7e2";
 
-/*var weatherData = {
-  base: "stations",
-  clouds: {
-    all: 1
-  },
-  coord: {
-    lat: 43.65,
-    lon: -79.38
-  },
-  dt: 1508887542971,
-  id: 6167863,
-  main: {
-    humidity: 77,
-    pressure: 1014,
-    temp: 17.99,
-    temp_max: 20,
-    temp_min: 16
-  },
-  name: 'Downtown Toronto',
-  sys: {
-    type: 1,
-    id: 2117,
-    message: 0.0041,
-    country: 'CA',
-    sunrise: 1507548290,
-    sunset: 1507589027,
-    type: 1
-  },
-  visibility: 16093,
-  weather: [
-    {
-      description: 'clear sky',
-      icon: '01n',
-      id: 800,
-      main: "Clear"
-    }
-  ],
-  wind: {
-    deg: 170,
-    speed: 1.5
-  }
-
-};
-
-*/
+ 
 $(function(){
 
 
@@ -104,7 +60,7 @@ $(function(){
 
       event.preventDefault();
 
-      //$('footer').hide().fadeIn(2000);
+   
       $('.search').slideUp(1000);
 
       var searchValue = $('#search-Value').val();
@@ -215,21 +171,6 @@ function addWeather(openWeather, searchValue){
 
   });
 
-
-/*var resultData = '';
-
-  for (var key in weatherData){
-       var nextVal = weatherData[key];
-       resultData += "<p>"+key + ":" + nextVal + "</p>";
-
-}
-
-
-      $('#result').html(resultData);
-}
-*/
-    //var resultData = "<h1> " + openWeather.name +"</h1>";
-    //resultData += "<h3> Temperature : " + weatherData.main.temp + " Celsius </h3>"
 
 
 
